@@ -26,8 +26,13 @@ const handleSubmit = async (e) => {
                 Authorization: `Bearer ${token}`,
             },
         });
-        setMessage(res.data);
+        setMessage("User updated");
         setMessageColor("text-green-500");
+        setId("");
+        setUsername("");
+        setEmail("");
+        setPassword("");
+        setRole("");
     } catch (err) {
         if (err.response.status === 403) {
             setMessage("You are not authorized to update this user.");
@@ -39,6 +44,7 @@ const handleSubmit = async (e) => {
         }
     }
 };
+
 
 
 return (
