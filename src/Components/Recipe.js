@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-/*import styles from "./Recipe.module.css";*/
+
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState({});
@@ -37,41 +37,6 @@ const Recipe = () => {
     }
   }, []);
 
-  /*return (
-    <div className={styles.recipeContainer}>
-        <div>
-            <h1>{recipe.recipeName}</h1>
-            <h3>Prep time: {recipe.prepTime} minutes</h3>
-            <h3>Cook time: {recipe.cookTime} minutes</h3>
-            <h3>Serves: {recipe.servings}</h3>
-            <h2>Ingredients</h2>
-            <ul>
-                {ingredients.map((ingredient) => (
-                    <li key={ingredient.ingredientId}>
-                        {ingredient.ingredientName} - {ingredient.quantity}
-                    </li>
-                ))}
-            </ul>
-            <h2>Instructions</h2>
-            <p>{recipe.instructions}</p>
-        </div>
-
-        <button
-            onClick={() => {
-                localStorage.removeItem("recipeName");
-                window.location.href = "/recipes";
-            }}
-        >
-            Back
-        </button>
-    </div>
-);
-};
-
-
-export default Recipe;*/
-
-//return using tailwind, make it look nice and EVEN
 return (
   <div className="flex flex-col items-center justify-center min-h-screen py-2">
     <div className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center"> 

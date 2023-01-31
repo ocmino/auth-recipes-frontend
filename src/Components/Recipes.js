@@ -27,26 +27,6 @@ function Recipes() {
     localStorage.setItem("recipeName", recipeName);
   };
 
-  /*return (
-    <div className={styles.container}>
-    {recipes.map((recipe) => (
-    <div className={styles.recipeBox} key={recipe.recipeId}>
-    <h2>{recipe.recipeName}</h2>
-    <p>Prep Time: {recipe.prepTime} minutes</p>
-    <p>Cook Time: {recipe.cookTime} minutes</p>
-    <p>Servings: {recipe.servings}</p>
-    <Link to="/recipe" onClick={() => handleClick(recipe.recipeName)}>View Recipe</Link>
-    </div>
-    ))}
-    <a href="/dashboard" className={styles.back_btn}>Back</a>
-    </div>
-    );
-    }
-
-export default Recipes;*/
-
-//return using tailwind, make it look nice and EVEN
-
 return (
   <div className="flex flex-col items-center justify-center min-h-screen py-2">
     <div className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
